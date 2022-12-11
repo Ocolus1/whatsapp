@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=whatsapp
+POSTGRES_USER=gbYKOIwJzgmfAwERMlhLUoYKSSgFgXYO
+POSTGRES_PASSWORD=mMC15WQaG0V1AHrQH2sS0MmtES5GPLzBDhgBBhHVpGynPNSoCj8YypeoKE2TUWh1
