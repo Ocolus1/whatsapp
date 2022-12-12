@@ -6,7 +6,7 @@ from .info import get_client
 from whatsapp.users.models import User
 
 @csrf_exempt
-def index(request):
+def twilio(request):
 
     # user input
     user_msg = request.POST.get('Body').lower()

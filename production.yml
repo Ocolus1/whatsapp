@@ -3,7 +3,6 @@ version: '3'
 volumes:
   production_postgres_data: {}
   production_postgres_data_backups: {}
-  production_traefik: {}
 
 services:
   django: &django
@@ -11,6 +10,7 @@ services:
       context: .
       dockerfile: ./compose/production/django/Dockerfile
     image: whatsapp_production_django
+    platform: linux/x86_64
     depends_on:
       - postgres
       - redis

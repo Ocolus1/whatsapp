@@ -4,5 +4,5 @@ from .views import *
 app_name = "auto_bot"
 urlpatterns = [
 	#Leave as empty string for base url
-	path('twilo/', index, name="index"),
+	path('twilio/', twilio, name="index"),
 ]
