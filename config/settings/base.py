@@ -316,3 +316,5 @@ SOCIALACCOUNT_FORMS = {"signup": "whatsapp.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+ACCOUNT_SID = env("ACCOUNT_SID")
+AUTH_TOKEN = env("AUTH_TOKEN")
