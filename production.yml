@@ -18,16 +18,16 @@ services:
       - ./.envs/.production/.django
       - ./.envs/.production/.postgres
     command: /start
-  networks:
-      - proxy
-      - default
-  labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=proxy"
-      - "traefik.http.routers.bot-secure.entrypoints=websecure"
-      - "traefik.http.routers.bot-secure.rule=Host(`bot.africandao.com`)"
-      - "traefik.http.routers.bot-secure.service=bot-service"
-      - "traefik.http.services.bot-service.loadbalancer.server.port=5000"
+    networks:
+        - proxy
+        - default
+    labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=proxy"
+        - "traefik.http.routers.bot-secure.entrypoints=websecure"
+        - "traefik.http.routers.bot-secure.rule=Host(`bot.africandao.com`)"
+        - "traefik.http.routers.bot-secure.service=bot-service"
+        - "traefik.http.services.bot-service.loadbalancer.server.port=5000"
 
 
   postgres:
