@@ -15,7 +15,6 @@ def twilio(request):
     response = MessagingResponse()
 
     # User Query
-    q = user_msg
     name = user_msg.split()[0].lower()
     if User.object.filter(name=name).exists():
         user = User.object.get(name=name)

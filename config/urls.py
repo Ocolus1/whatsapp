@@ -16,7 +16,7 @@ urlpatterns = [
     path("users/", include("whatsapp.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path("", include("whatsapp.auto_bot.urls", namespace="auto_bot")),
+    path("auto_bot", include("whatsapp.auto_bot.urls", namespace="auto_bot")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
